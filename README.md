@@ -1,8 +1,15 @@
 OSM2Hive
 ========
 
-Read-me
+How to load OSM for DACH region into a SOLR index?
 -------
+
+1) Load data into Hive
+2) Create a Parquet table for faster SQL queries
+3) Index the data in SOLR
+
+OSM2Hive
+-----
 
 OSM2Hive is a collection of User-defined functions for Hive to allow OSM XML data import.
 It reads a XML file in a Hive table, and parses it to create new tables, in an easier to use
