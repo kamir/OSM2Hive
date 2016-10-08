@@ -5,7 +5,7 @@ How to load OSM file for GB into a SOLR index?
 -------
 
 1. Load data into a Hive table
-* transform osmdata into osmways, osmnodes, osmrelations
+ * Transform osmdata into osmways, osmnodes, osmrelations
 2. Create a Parquet table for each transformed table for faster SQL queries
 3. Denormalize the datamodel
 4. Index all objectes to SOLR 
