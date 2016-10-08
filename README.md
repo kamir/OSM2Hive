@@ -1,12 +1,14 @@
 OSM2Hive
 ========
 
-How to load OSM for DACH region into a SOLR index?
+How to load OSM file for GB into a SOLR index?
 -------
 
-1) Load data into Hive
-2) Create a Parquet table for faster SQL queries
-3) Index the data in SOLR
+1. Load data into a Hive table
+* transform osmdata into osmways, osmnodes, osmrelations
+2. Create a Parquet table for each transformed table for faster SQL queries
+3. Denormalize the datamodel
+4. Index all objectes to SOLR 
 
 OSM2Hive
 -----
